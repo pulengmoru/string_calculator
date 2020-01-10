@@ -1,23 +1,20 @@
-import re
-import numpy as np
-
-def add(value_list):
-
-	value_list = []
-	
-	if value_list = array([""])
-	return == 0
-
-	elif value_list = array(["1"])
-	return == 0
-
-	elif value_list = array(["1,2"])
-	return == 2
-
+def add(num_string):
+	if len(num_string) == 0:
+		return 0
+	if len(num_string) == 1:
+		return int(num_string)
+	if len(num_string)>=2 and "," not in num_string:
+		return int(num_string)
 	else:
-		value_list = negatives.append()
-if negatives:
-	raise ValueError(f'negatives not alloed. found {negatives}')
+		nums = num_string.split(",")
+		total = 0
+		for n in nums:
+			total = total + int(n)
+		return total 
 
-	len(value_list)
-print(value_list)
+	if len(num_string)>2 and "," not in num_string:
+		return int(num_string)
+	else:
+		nums = num_string.split(",")
+		return sum(int(nums))
+print(add("22"))

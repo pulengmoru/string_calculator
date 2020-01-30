@@ -1,5 +1,6 @@
-from string_calculator import add
+from string_calculator.py import add
 
+import pytest
 
 def test_return_0_for_empty_string():
 	result = add("") 
@@ -34,7 +35,7 @@ def test_different_delimiters():
 	result = add("//;\n1;2")
 	assert result == 3
 
-def test_dnegative_numbers_raises_exception():
+def test_negative_numbers_raises_exception():
 	result = add("-1")
 	assert NegativeError
 
